@@ -67,7 +67,7 @@ public class JdbcTemplateItemRepositoryV3 implements ItemRepository {
     @Override
     public void update(Long itemId, ItemUpdateDto updateParam) {
 
-        String sql = "update item set item_name=:itemName, price:price, quantity=:quantity " +
+        String sql = "update item set item_name=:itemName, price=:price, quantity=:quantity " +
                 "where id=:id";
 
         /*template.update(sql,
