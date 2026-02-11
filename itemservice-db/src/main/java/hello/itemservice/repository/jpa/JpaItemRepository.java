@@ -19,7 +19,7 @@ import java.util.Optional;
 @Transactional // jpa의 모든 데이터 변경은 트랜잭션 안에서 이루어 짐.
 public class JpaItemRepository implements ItemRepository {
 
-    // 엔티티 매니저의 의존관계주입을 받아야함.
+    // 엔티티 매니저의 의존관계주입을 받아야함. - 근데 이건 따로 빈생성을 안해도 스프링컨테이너가 생성해둠
     private final EntityManager em;
 
     public JpaItemRepository(EntityManager em) {
